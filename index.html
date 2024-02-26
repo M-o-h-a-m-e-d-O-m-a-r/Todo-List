@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do LIST</title>
+    <link rel="stylesheet" href="./master.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script src="./main.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flexrow-container">
+        <div class="standard-theme theme-selector"></div>
+        <div class="light-theme theme-selector"></div>
+      </div>
+      <div class="header">
+        <h1 id="title">
+          Just do it
+          <div id="border"></div>
+        </h1>
+      </div>
+      <!-- ............. -->
+
+      <div class="card">
+        <div class="form" id="form">
+          <img
+            class="img_1"
+            src="./turn-right-arrow-with-broken-line.png"
+            alt=""
+          />
+          <p id="para_1">The field mustn't be more than 40 characters</p>
+          <img
+            class="img_2"
+            src="./turn-right-arrow-with-broken-line.png"
+            alt=""
+          />
+          <p id="para_2">The field mustn't be empty</p>
+          <form id="Form" action="">
+            <input
+              placeholder="type your task here..."
+              type="text"
+              data-id="input"
+              id="input"
+            />
+            <button id="btn-form" type="submit">Add</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="boxs">
+        <p id="note">No Tasks yet</p>
+        <!-- <div id="" class="task">
+          <p id="">omar</p>
+          <div id="divOfBtns">
+            <button class="check">Done</button>
+            <button class="delete">X</button>
+          </div>
+        </div> -->
+        <div id="loadingContainer">
+          <div class="loading-gear"></div>
+          <div id="loadingText">Loading...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
